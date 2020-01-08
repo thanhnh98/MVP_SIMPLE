@@ -43,6 +43,7 @@ public class LoginActivity extends AppCompatActivity implements LoginPresenter.V
     @Override
     public void onLoginSuccess() {
         startActivity(new Intent(this,MainActivity.class));
+        this.finish();
     }
 
     @Override
